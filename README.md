@@ -10,7 +10,7 @@ site when content elsewhere mentions other content by URL.
 
 ## Quick start
 
-1. Install `django-simplementions`, probably via pip: `pip install -e git+https://github.com/emilbjorklund/django-simplementions.git#egg=django-simplemention`
+1. Install `django-simplementions`, probably via pip: `pip install -e git+https://github.com/emilbjorklund/django-simplewebmentions.git#egg=django-simplewebmentions`
 2. Add `simplementions` (and optionally, Celery – see below) to your `INSTALLED_APPS` setting:
        ```
        INSTALLED_APPS = (
