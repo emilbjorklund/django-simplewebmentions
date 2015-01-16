@@ -1,8 +1,8 @@
 # Simple Webmention app for Django
 
-**This is a work in progress, not ready for production use. 
+*This is a work in progress, not ready for production use. 
 
-Install at your own risk.**
+Install at your own risk.*
 
 This intends to be a simple and decoupled app for sending and receiving 
 [Webmentions](http://indiewebcamp.com/Webmention), meaning that you can notify a 
