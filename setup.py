@@ -31,5 +31,8 @@ setup(
     packages=find_packages(exclude=['tests']),
     include_package_data=True,
     test_suite='tests.runtests.main',
-    install_requires=['Django>=1.7', 'webmentiontools>=0.4.0']
+    install_requires=['Django>=1.7', 'webmentiontools>=0.4.0'],
+    extras_require = {
+        'async':  ['celery>=3.1.17']
+        }
     )
