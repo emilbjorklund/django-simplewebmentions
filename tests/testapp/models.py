@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+
 from django.db import models
 
 class BlogPost(models.Model):
@@ -6,6 +8,11 @@ class BlogPost(models.Model):
     body = models.TextField()
     pub_date = models.DateField()
     slug = models.SlugField(max_length=255)
+    allow_replies = models.BooleanField(default=False)
 
     def get_absolute_url(self):
-        return '%s/%s/%s/%s' % (self.pub_date.year, self.pub_date.strftime('%m'), self.pub_date.strftime('%d'))
+        return 'blog/%s/' % self.pk
+
+    def _do_accept_webmention(self):
+        return self.accepts_webmentions
+    accepts_webmentions = property(_do_accept_webmention)

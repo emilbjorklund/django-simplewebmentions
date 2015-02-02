@@ -1,6 +1,8 @@
+from __future__ import unicode_literals, absolute_import
+
 from django import template
-from __future__ import unicode_literals
-from simplewebmentions.models import WebMention
+
+from ..models import WebMention
 
 register = template.Library()
 

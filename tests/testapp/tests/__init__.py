@@ -7,3 +7,4 @@ from ..models import BlogPost
 CT = ContentType.objects.get_for_model
 
 from .webmention_views import *
+from .helpers_verify_params import *
